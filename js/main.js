@@ -44,7 +44,8 @@ const subtitleLocales = {
 	Chinese: 'zh-Hans',
 	TraditionalChinese: 'zh-Hant',
 	Japanese: 'ja',
-	Korean: 'ko'
+	Korean: 'ko',
+	Thai: 'th'
 };
 let isVoicelinePlaying = false;
 
@@ -62,21 +63,22 @@ const AUDIO_DETAIL = [
                 "私は、雑草の硬いところが好きなんです。"
             ],
             English: [
-                "...The reason I like weeds isn't because they are beautiful.",
-                "I like them for how tough and resilient they are."
+                "...I don't like weeds for their looks.",
+                "I like how resilient they are."
             ],
             Chinese: [
                 "……我喜欢杂草，并不是因为它们有多美丽。",
                 "我喜欢的是……杂草那坚硬不屈的地方。"
             ],
             TraditionalChinese: [
-                "……我喜歡雜草，並不是因為它們有多美麗。",
-                "我喜歡的是……雜草那堅硬不屈的地方。"
+                "……我喜歡雜草，並不是因為，它很美麗。",
+                "我喜歡雜草那堅強的一面。"
             ],
             Korean: [
-                "...초를 좋아하는 이유는 그들이 아름답기 때문이 아닙니다.",
-                "난 그들이 얼마나 견고하고 탄력적인지 좋아해요."
-            ]
+                "……잡초를 좋아하는 건, 아름다워서가 아니에요.",
+                "저는, 잡초의 꿋꿋함이 좋아요."
+            ],
+            Thai: ["ที่ฉันชอบพวกวัชพืช... ไม่ใช่เพราะมันสวยงามหรอกค่ะ","ฉันชอบความทรหดของวัชพืชค่ะ"]
         }
     },
     {
@@ -86,21 +88,22 @@ const AUDIO_DETAIL = [
                 "それこそが、私の理想。"
             ],
             English: [
-                "The tenacity to take deep root in any barren wasteland—",
-                "That is my ultimate ideal."
+                "The tenacity with which they take root, even in the most barren of places...",
+                "I think that's the ideal, for me."
             ],
             Chinese: [
                 "无论在怎样荒凉的土地上都能深深扎根的韧性——",
                 "那才是……我的理想。"
             ],
             TraditionalChinese: [
-                "無論在怎樣荒涼的土地上都能深深紮根的韌性——",
-                "那才是……我的理想。"
+                "無論在多麼貧瘠的地方都能堅強地紮根，頑強地生存──",
+                "那正是，我的理想。"
             ],
             Korean: [
-                "어떤 황무지에서도 깊이 뿌리내리는 끈기—",
-                "그게 제 궁극적인 이상입니다."
-            ]
+                "어떤 척박한 곳이라도 강하게 뿌리내리는, 끈질김이…….",
+                "그것이야말로, 저의 이상."
+            ],
+            Thai: ["ถึงจะอยู่ในพื้นที่แห้งแล้ง ก็ยังหยั่งรากลึกอย่างแข็งแกร่ง ความอุตสาหะนั่นน่ะ...","คืออุดมคติของฉัน..."]
         }
     },
     {
@@ -110,21 +113,22 @@ const AUDIO_DETAIL = [
                 "輝かなくてもいいんです。"
             ],
             English: [
-                "There is no need to be beautiful.",
-                "It doesn't even have to shine."
+                "It doesn't have to be pretty.",
+                "Nor does it have to shine."
             ],
             Chinese: [
                 "不需要变得美丽，",
                 "也不需要闪闪发光。"
             ],
             TraditionalChinese: [
-                "不需要變得美麗，",
-                "也不需要閃閃發光。"
+                "沒有必要保持美麗。",
+                "就算不耀眼也沒關係。"
             ],
             Korean: [
-                "아름다울 필요는 없습니다.",
-                "빛나는 것도 필요 없어요."
-            ]
+                "아름다운 모습일 필요는 없어요.",
+                "빛나지 않아도 괜찮아요."
+            ],
+            Thai: ["ไม่จำเป็นต้องมีรูปลักษณ์ ที่สวยงามหรอกค่ะ","ต่อให้ไม่เปล่งประกาย ก็ไม่เป็นไรค่ะ"]
         }
     },
     {
@@ -134,21 +138,22 @@ const AUDIO_DETAIL = [
                 "せ、先生と一緒にいられるのなら……。"
             ],
             English: [
-                "As long as I can simply spend my time with someone precious...",
-                "I-If I can just be together with you, Sensei..."
+                "As long as I can be with those who are precious to me...",
+                "A-As long as I can be with Sensei..."
             ],
             Chinese: [
                 "只要能和重要的人携手度过……。",
                 "如、如果是能和老师待在一起的话……。"
             ],
             TraditionalChinese: [
-                "只要能和重要的人攜手度過……。",
-                "如、如果是能和老師待在一起的話……。"
+                "只要能和重要的人一起度過……",
+                "只，只要能和老師在一起的話……"
             ],
             Korean: [
-                "내가 소중한 사람과 시간을 보낼 수 있는 한...",
-                "내가 너랑 함께 할 수 있다면, 선생님"
-            ]
+                "소중한 사람들과, 그저 함께할 수 있다면…….",
+                "서, 선생님과 함께 할 수 있다면……"
+            ],
+            Thai: ["ขอแค่ได้อยู่ร่วมกับ คนที่สำคัญ...","ถะ... ถ้าได้ อยู่กับคุณครู..."]
         }
     },
     {
@@ -158,21 +163,22 @@ const AUDIO_DETAIL = [
                 "……好き、なんです。"
             ],
             English: [
-                "For me, that would be...",
-                "...more than enough. That's why... I love you."
+                "For me...",
+                "...that's what I like. "
             ],
             Chinese: [
                 "我只要这样，就……。",
                 "……就很、喜欢了。"
             ],
             TraditionalChinese: [
-                "我只要這樣，就……。",
-                "……就很、喜歡了。"
+                "我就是因為這樣……",
+                "……才會喜歡的。"
             ],
             Korean: [
-                "내겐 그건...",
-                "...충분한 것 이상이야 그래서 널 사랑해"
-            ]
+                "저는, 그걸로…….",
+                "……좋아, 해요. "
+            ],
+            Thai: ["แค่นั้นฉันก็...","ดีใจ... แล้วค่ะ "]
         }
     }
 ];
@@ -284,7 +290,7 @@ function playVoiceline() {
 			track.play().catch(finish);
 
 			if (dialogBox) {
-				textbox.textContent = dialog[window.selectedLanguage][index];
+				textbox.textContent = getSubtitleText(dialog, window.selectedLanguage, index);
 				textbox.style.opacity = 1;
 			}
 		},
@@ -459,6 +465,16 @@ function setMouse(event) {
 	return { x: ax - canvas.width * positionX, y: ay - canvas.height * positionY };
 }
 
+function getSubtitleText(dialog, language, index) {
+	let text = dialog?.[language]?.[index];
+	if (text == null && language === 'Thai') {
+		language = 'English';
+		text = dialog?.[language]?.[index];
+	}
+	textbox.lang = subtitleLocales[language];
+	return text ?? "";
+}
+
 function updateSubtitleLanguage() {
 	let language = subtitleLanguagePreference;
 	if (language === 'auto') {
@@ -472,6 +488,8 @@ function updateSubtitleLanguage() {
 			language = 'Japanese';
 		} else if (primary === 'ko' || primary === 'korean' || primary === 'koreana') {
 			language = 'Korean';
+		} else if (primary === 'th' || primary === 'thai') {
+			language = 'Thai';
 		} else {
 			language = 'English';
 		}
@@ -481,7 +499,7 @@ function updateSubtitleLanguage() {
 	window.selectedLanguage = language;
 	textbox.lang = subtitleLocales[language];
 	const clip = currentTracks.at(-1);
-	if (dialogBox && clip) textbox.textContent = clip.dialog[language][clip.index];
+	if (dialogBox && clip) textbox.textContent = getSubtitleText(clip.dialog, language, clip.index);
 }
 
 function init() {
